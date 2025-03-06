@@ -23,3 +23,16 @@ html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
+
+.header {
+    position: fixed; /*fixed artinya ga bergerak*/
+    top: 0;
+    left: 0;
+    width: 100%; /*agar lebar memenuhi viewport*/
+    padding: 2rem 9%; /*2 rem itu jarak si tulisan portfolio ke atas page, 9% diambil dri seluruh kelebaran viewport yg 100%*/
+    background: var(--bg-color);
+    display: flex; /*flex biar semuanya sebaris*/
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; /*z-index itu kayak buat layer, semakin gede angkanya, dia bakal makin ke depan. misalkan ada z index:1 sm z-index:3, z-index:1 nya bakal ketiban sm z-index:3*/
+}
