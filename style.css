@@ -16,23 +16,131 @@
     --bg-color: #fff;
     --primary-color: #667AFB;
     --second-text: #555353;
-    --text-color: #211B3D;
+    --text-color: #212447;
 }
 
 html {
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     overflow-x: hidden;
 }
 
+section {
+    padding: 10rem 9% 2rem;
+}
+
 .header {
-    position: fixed; /*fixed artinya ga bergerak*/
+    position: fixed;
+    /*fixed artinya ga bergerak*/
     top: 0;
     left: 0;
-    width: 100%; /*agar lebar memenuhi viewport*/
-    padding: 2rem 9%; /*2 rem itu jarak si tulisan portfolio ke atas page, 9% diambil dri seluruh kelebaran viewport yg 100%*/
+    width: 100%;
+    /*agar lebar memenuhi viewport*/
+    padding: 2rem 9%;
+    /*2 rem itu jarak si tulisan portfolio ke atas page, 9% diambil dri seluruh kelebaran viewport yg 100%*/
     background: var(--bg-color);
-    display: flex; /*flex biar semuanya sebaris*/
+    display: flex;
+    /*flex biar semuanya sebaris*/
     justify-content: space-between;
     align-items: center;
-    z-index: 100; /*z-index itu kayak buat layer, semakin gede angkanya, dia bakal makin ke depan. misalkan ada z index:1 sm z-index:3, z-index:1 nya bakal ketiban sm z-index:3*/
+    z-index: 100;
+    /*z-index itu kayak buat layer, semakin gede angkanya, dia bakal makin ke depan. misalkan ada z index:1 sm z-index:3, z-index:1 nya bakal ketiban sm z-index:3*/
+}
+
+.header button {
+    font-size: 14.828px;
+    font-weight: 500;
+}
+
+.navbar a {
+    margin-right: 60px;
+    color: var(--text-color);
+}
+
+.button {
+    display: inline-block;
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    font-weight: 500;
+    /* margin-left:27rem; */
+    margin-right: 19px;
+    transition: ease-in-out .2s;
+}
+
+.button:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px;
+    background: var(--primary-color);
+    border-radius: 6px;
+    color: var(--bg-color);
+    border: 2px solid var(--primary-color);
+    font-weight: 500;
+    transition: ease-in-out .2s;
+}
+
+.btn:hover{
+    color: var(--primary-color);
+    background: transparent;
+}
+
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+.home-kiri .home-kiri-img {
+    margin-bottom: 49px;
+    margin-top: 88px;
+}
+
+.home-kiri .desc {
+    color: var(--second-text);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    width: 624px;
+    margin-bottom: 50px;
+}
+
+.home-kiri button {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.home-kanan {
+    margin-bottom: -5px;
+}
+
+.dipercaya {
+    margin-top: 28px;
+    display: flex;
+}
+
+.dipercaya div{
+    margin-left: 12px;
+}
+
+.dipercaya-p{
+    font-size: 18px;
+    color: var(--second-text);
+font-weight: 600;
+}
+
+.rating {
+    display: flex;
+    gap: 6px;
+}
+
+.rating p {
+    font-size: 16px;
+    color: var(--second-text);
 }
