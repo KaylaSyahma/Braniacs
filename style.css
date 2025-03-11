@@ -17,6 +17,7 @@
     --primary-color: #667AFB;
     --second-text: #555353;
     --text-color: #212447;
+    --gradient-3: linear-gradient(134deg, #FFF 5.11%, #CFD5F7 52.57%, #F8F8FC 96.21%, #6361BB 206.55%);
 }
 
 html {
@@ -24,12 +25,19 @@ html {
     overflow-x: hidden;
 }
 
+h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 60px;
+}
+
 section {
-    padding: 10rem 9% 2rem;
+    padding: 3rem 9%;
 }
 
 .header {
-    position: fixed;
+    /* position: fixed; */
     /*fixed artinya ga bergerak*/
     top: 0;
     left: 0;
@@ -69,7 +77,7 @@ section {
     transition: ease-in-out .2s;
 }
 
-.button:hover{
+.button:hover {
     background-color: var(--primary-color);
     color: white;
 }
@@ -85,7 +93,7 @@ section {
     transition: ease-in-out .2s;
 }
 
-.btn:hover{
+.btn:hover {
     color: var(--primary-color);
     background: transparent;
 }
@@ -125,14 +133,14 @@ section {
     display: flex;
 }
 
-.dipercaya div{
+.dipercaya div {
     margin-left: 12px;
 }
 
-.dipercaya-p{
+.dipercaya-p {
     font-size: 18px;
     color: var(--second-text);
-font-weight: 600;
+    font-weight: 600;
 }
 
 .rating {
@@ -144,3 +152,42 @@ font-weight: 600;
     font-size: 16px;
     color: var(--second-text);
 }
+
+#mentor {
+    text-align: center;
+    background: var(--gradient-3);
+}
+
+.mentor-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile h3 {
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.profile img {
+    margin-bottom: 25px;
+}
+
+.mentor-desc {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--second-text);
+}
+
+#review{
+    background: var(--gradient-3);
+    text-align: center;
+}
+
+.review-judul{
+flex-direction: column;
+justify-content: center;
+}
+
+
