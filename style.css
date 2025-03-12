@@ -8,7 +8,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
 
 }
 
@@ -25,7 +25,7 @@ html {
     overflow-x: hidden;
 }
 
-h2{
+h2 {
     font-size: 36px;
     font-weight: 700;
     color: var(--text-color);
@@ -33,7 +33,7 @@ h2{
 }
 
 section {
-    padding: 3rem 9%;
+    padding: 5rem 9%;
 }
 
 .header {
@@ -61,7 +61,13 @@ section {
 
 .navbar a {
     margin-right: 60px;
+}
+a{
     color: var(--text-color);
+}
+
+a:hover{
+    color: var(--primary-color);
 }
 
 .button {
@@ -130,7 +136,7 @@ section {
 
 /* Section dua */
 
-.section-title{
+.section-title {
     display: block;
     align-items: center;
     text-align: center;
@@ -139,44 +145,11 @@ section {
 
 .courses-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 kolom */
-    gap: 26px; 
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 kolom */
+    gap: 26px;
     justify-content: center;
     align-items: stretch;
-}
-
-/* Styling card */
-.course-card {
-    background: white;
-    border-radius: 12px;
-    padding: 80px;
-    margin-top: 50px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 150px; 
-    transition: transform 0.3s ease-in-out;
-}
-
-.course-card:hover {
-    transform: translateY(-5px);
-}
-
-.course-card img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-.course-card h4 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
-    text-align: center;
-    margin-top: 10px;
 }
 
 .dipercaya {
@@ -204,15 +177,53 @@ section {
     color: var(--second-text);
 }
 
+/* Styling card */
+.course-card {
+    background: white;
+    border-radius: 12px;
+    padding: 80px;
+    margin-top: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.course-card h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
 #mentor {
     text-align: center;
     background: var(--gradient-3);
 }
 
-.mentor-container{
-    display: flex;
-    justify-content: space-between;
+.mentor-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
 }
+
 
 .profile h3 {
     color: var(--text-color);
@@ -231,15 +242,121 @@ section {
     color: var(--second-text);
 }
 
-#review{
+#review {
     background: var(--gradient-3);
     text-align: center;
 }
 
-.review-judul{
-flex-direction: column;
-justify-content: center;
+.review-judul {
+    margin-bottom: 60px;
+    justify-content: center;
 }
 
+.siswa-container{
+    display: flex;
+    gap: 32px;
+}
 
+.siswa{
+padding: 20px 29.017px;
+text-align: start;
+background: white;
+border-radius: 18px;
+}
 
+.siswa-profile {
+    display: flex;
+    margin-bottom: 18px;
+    gap: 21px;
+}
+
+.siswa-profile .nama {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.siswa-desc img{
+    height: 14px;
+}
+
+.student-desc {
+    font-size: 15px;
+    color: var(--second-text);
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.komentar {
+    color: var(--second-text);
+}
+
+/* footer section */
+footer{
+    padding: 3rem 9% 36px;
+    background: var(--gradient-3);
+}
+.footer-atas{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 57px;
+}
+
+footer h5{
+    font-size: 25px;
+font-style: normal;
+font-weight: 600;
+margin-bottom: 16px;
+}
+
+footer a{
+    margin-bottom: 11px;
+    display: flex;
+
+}
+
+.footer-logo{
+    margin-right: 200px;
+    width: 250px;
+}
+
+.footer-logo p{
+    margin-top: 18px;
+    font-size: 17px;
+font-weight: 400;
+color: var(--text-color);
+}
+
+.link{
+    margin-right: 90px;
+}
+
+.hubungi{
+    /* margin-left: 180px; */
+}
+
+.copyright {
+    margin-top: 39px;
+    text-align: center;
+    color: var(--second-text);
+font-size: 14px;
+font-weight: 500;
+}
+
+@media (max-width: 1400px) {
+    img {
+        /* max-width: 100%; */
+        height: auto;
+      }
+}
+
+@media (max-width: 1200px) {
+    .mentor-container {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        /* 4 kolom */
+    }
+}
