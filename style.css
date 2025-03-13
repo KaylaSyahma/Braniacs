@@ -18,6 +18,7 @@
     --second-text: #555353;
     --text-color: #212447;
     --gradient-3: linear-gradient(134deg, #FFF 5.11%, #CFD5F7 52.57%, #F8F8FC 96.21%, #6361BB 206.55%);
+    --shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.12);
 }
 
 html {
@@ -62,11 +63,12 @@ section {
 .navbar a {
     margin-right: 60px;
 }
-a{
+
+a {
     color: var(--text-color);
 }
 
-a:hover{
+a:hover {
     color: var(--primary-color);
 }
 
@@ -211,6 +213,103 @@ a:hover{
     margin-top: 10px;
 }
 
+/* KELAS HITS STYLING */
+.kelas-hits {
+    text-align: center;
+}
+
+.kelas-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 kolom */
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.kelas {
+    margin-top: 50px;
+    text-align: left;
+    padding: 20px;
+    width: 405px;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: ease-in-out .2s;
+}
+
+.kelas:hover{
+    box-shadow: var(--shadow);
+    /* border: transparent; */
+}
+
+.kelas-rating {
+    display: flex;
+    margin-bottom: 12px;
+    margin-top: 37px;
+}
+
+.kelas-rating p{
+    color: var(--second-text);
+}
+
+.nama-kelas {
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.desc-kelas {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--second-text);
+    margin-bottom: 35px;
+}
+
+.join{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ri-arrow-right-up-line{
+    font-size: 26px;
+}
+
+.kelas-hits a{
+    background: none;
+    border: 1px solid var(--second-text);
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-color);
+    padding: 10px 35px;
+    border-radius: 10px;
+    transition: all .2s;
+}
+
+.kelas a{
+    font-weight: 700;
+}
+
+.kelas-hits a:hover{
+    background: var(--primary-color);
+    color: white;
+    border: var(--primary-color);
+}
+
+.lihat{
+    font-weight: 600;
+    align-items: center;
+    display: inline-flex;
+}
+
+
+.price{
+    font-size: 28px;
+    color: var(--text-color);
+font-weight: 700;
+}
+
+
 
 #mentor {
     text-align: center;
@@ -252,16 +351,16 @@ a:hover{
     justify-content: center;
 }
 
-.siswa-container{
+.siswa-container {
     display: flex;
     gap: 32px;
 }
 
-.siswa{
-padding: 20px 29.017px;
-text-align: start;
-background: white;
-border-radius: 18px;
+.siswa {
+    padding: 20px 29.017px;
+    text-align: start;
+    background: white;
+    border-radius: 18px;
 }
 
 .siswa-profile {
@@ -277,7 +376,7 @@ border-radius: 18px;
     color: var(--primary-color);
 }
 
-.siswa-desc img{
+.siswa-desc img {
     height: 14px;
 }
 
@@ -293,51 +392,52 @@ border-radius: 18px;
 }
 
 /* footer section */
-footer{
+footer {
     padding: 3rem 9% 36px;
     background: var(--gradient-3);
 }
-.footer-atas{
+
+.footer-atas {
     display: flex;
     /* justify-content: flex-start; */
     margin-bottom: 57px;
 }
 
-footer h5{
+footer h5 {
     font-size: 20px;
-font-style: normal;
-font-weight: 600;
-margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 16px;
 }
 
-footer a{
+footer a {
     margin-bottom: 11px;
     display: flex;
     font-size: 14px;
 }
 
-.footer-logo{
+.footer-logo {
     margin-right: 210px;
     width: 250px;
 }
 
-.footer-logo p{
+.footer-logo p {
     margin-top: 18px;
     font-size: 17px;
-font-weight: 400;
-color: var(--text-color);
+    font-weight: 400;
+    color: var(--text-color);
 }
 
-.footer-link{
+.footer-link {
     display: flex;
 }
 
-.footer-link-atas{
+.footer-link-atas {
     display: flex;
     margin-right: 180px;
 }
 
-.link{
+.link {
     margin-right: 90px;
 }
 
@@ -346,43 +446,45 @@ color: var(--text-color);
     margin-top: 39px;
     text-align: center;
     color: var(--second-text);
-font-size: 14px;
-font-weight: 500;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 @media (max-width: 1400px) {
     .home {
         gap: 2rem;
     }
-    .home-kiri .desc{
+
+    .home-kiri .desc {
         font-size: 17px;
     }
 
     img {
         max-width: 100%;
         height: auto;
-      }
+    }
 
-    .home-kiri-img{
+    .home-kiri-img {
         height: 150px;
     }
 
-    .footer-link{
+    .footer-link {
         display: flex;
         flex-direction: column;
     }
 
-    .hubungi{
+    .hubungi {
         margin-top: 15px;
     }
 }
 
 
 @media (max-width: 1250px) {
-    .home{
+    .home {
         padding-bottom: 4rem;
     }
-    .home-kanan{
+
+    .home-kanan {
         display: none;
     }
 
@@ -393,6 +495,7 @@ font-weight: 500;
     .home-kiri-img {
         height: 250px;
     }
+
     .mentor-container {
         text-align: center;
         justify-content: center;
@@ -405,11 +508,11 @@ font-weight: 500;
         justify-content: space-evenly;
     }
 
-    .footer-link-atas{
+    .footer-link-atas {
         margin-right: 0;
     }
 
-    .footer-logo{
+    .footer-logo {
         width: 300px;
         margin-right: 0;
     }
