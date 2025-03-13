@@ -132,6 +132,11 @@ a:hover {
     margin-right: 20px;
 }
 
+.home-kiri button:hover i {
+    transform: translate(3px, -3px);
+    transition: transform 0.2s ease-in-out;
+}
+
 .home-kanan {
     margin-bottom: -5px;
 }
@@ -300,6 +305,11 @@ a:hover {
     font-weight: 600;
     align-items: center;
     display: inline-flex;
+}
+
+.lihat:hover i {
+    transform: translate(3px, -3px);
+    transition: transform 0.2s ease-in-out;
 }
 
 
